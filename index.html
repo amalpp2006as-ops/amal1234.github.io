@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amal | Creative Web Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      background: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 12px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      background-color: #00bcd4;
+      color: white;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #0097a7;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill-box {
+      width: 220px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Amal</h1>
+      <p>Frontend Developer in the Making 🚀</p>
+      <button onclick="welcome()">Get Started</button>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a BCA final-year student passionate about creating clean, responsive
+      websites using modern frontend technologies.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill-box">HTML5</div>
+      <div class="skill-box">CSS3</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">Responsive Design</div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93" alt="">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Amal | Designed with ❤️
+  </footer>
+
+  <script>
+    function welcome() {
+      alert("Welcome to my website! Thanks for visiting 😊");
+    }
+  </script>
+
+</body>
+</html>
