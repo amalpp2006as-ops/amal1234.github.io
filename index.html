@@ -2,153 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Amal | Creative Web Page</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: #ffffff;
-      color: #333;
-    }
-
-    /* HERO SECTION */
-    .hero {
-      height: 100vh;
-      background: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97") center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
-
-    .hero-content {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 40px;
-      border-radius: 12px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 20px;
-    }
-
-    .hero button {
-      margin-top: 20px;
-      padding: 12px 30px;
-      font-size: 16px;
-      border: none;
-      border-radius: 25px;
-      background-color: #00bcd4;
-      color: white;
-      cursor: pointer;
-    }
-
-    .hero button:hover {
-      background-color: #0097a7;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .skills {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .skill-box {
-      width: 220px;
-      padding: 20px;
-      background-color: #f2f2f2;
-      border-radius: 10px;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    }
-
-    /* GALLERY */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: #222;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Amal P P — BCA graduate interested in Cybersecurity, Cloud Computing, Ethical Hacking, AI/ML and IoT.">
+  <title>Amal P P | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">AMAL<span>.</span></a>
+      <button class="menu" aria-label="Open navigation">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+        <a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-  <!-- HERO -->
-  <div class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm Amal</h1>
-      <p>Frontend Developer in the Making 🚀</p>
-      <button onclick="welcome()">Get Started</button>
-    </div>
-  </div>
+  <main>
+    <section id="home" class="hero container">
+      <p class="eyebrow">HELLO, I'M</p>
+      <h1>Amal P P</h1>
+      <h2>BCA Graduate & Technology Enthusiast</h2>
+      <p class="lead">Interested in Cybersecurity, Ethical Hacking, Cloud Computing, AI/ML and IoT. I enjoy learning by building practical projects and solving technical problems.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View My Work</a>
+        <a class="btn" href="mailto:amalpp2006as@gmail.com">Contact Me</a>
+      </div>
+      <div class="social">
+        <a href="https://github.com/amalpp2006as-ops" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/amal-p-p-047a5441a" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
 
-  <!-- ABOUT -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a BCA final-year student passionate about creating clean, responsive
-      websites using modern frontend technologies.
-    </p>
-  </section>
+    <section id="about" class="section alt">
+      <div class="container">
+        <p class="eyebrow">ABOUT ME</p><h2>Building skills through practical learning</h2>
+        <p>I am a Bachelor of Computer Applications graduate with academic exposure to Cybersecurity, Cloud Computing and Ethical Hacking. My interests also include AI/ML, IoT and software development. Through academic projects and cybersecurity internship experience, I have developed a foundation in security concepts, networking, vulnerability assessment, automation and teamwork.</p>
+      </div>
+    </section>
 
-  <!-- SKILLS -->
-  <section>
-    <h2>My Skills</h2>
-    <div class="skills">
-      <div class="skill-box">HTML5</div>
-      <div class="skill-box">CSS3</div>
-      <div class="skill-box">JavaScript</div>
-      <div class="skill-box">Responsive Design</div>
-    </div>
-  </section>
+    <section id="skills" class="section container">
+      <p class="eyebrow">SKILLS & TOOLS</p><h2>Technical toolkit</h2>
+      <div class="grid">
+        <article class="card"><h3>Cybersecurity</h3><p>Penetration Testing · Vulnerability Assessment · Network Security · Threat Hunting Fundamentals</p></article>
+        <article class="card"><h3>Security Tools</h3><p>Nmap · Wireshark · Burp Suite · Metasploit · TCPDump · Nikto</p></article>
+        <article class="card"><h3>Programming</h3><p>Python · Java · HTML · CSS · JavaScript Fundamentals</p></article>
+        <article class="card"><h3>Other Areas</h3><p>Cloud Computing · Ethical Hacking · AI/ML Fundamentals · IoT · Git & GitHub</p></article>
+      </div>
+    </section>
 
-  <!-- GALLERY -->
-  <section>
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93" alt="">
-      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
-      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
-    </div>
-  </section>
+    <section id="projects" class="section alt">
+      <div class="container">
+        <p class="eyebrow">PROJECTS</p><h2>Selected work</h2>
+        <div class="grid">
+          <article class="card project">
+            <span>IoT / Embedded Systems</span><h3>Bluetooth-Based Home Automation</h3>
+            <p>Developed a system to control electrical appliances through Bluetooth communication using Arduino Uno, an HC-05 Bluetooth module and a 4-channel relay module. Built as a five-member team project, strengthening practical skills in hardware integration, troubleshooting and teamwork.</p>
+          </article>
+          <article class="card project">
+            <span>Cybersecurity</span><h3>Vulnerability Assessment & Penetration Testing</h3>
+            <p>Performed structured security assessment activities in an authorized project environment using tools including Nmap, Nikto, Burp Suite and Dirb. Documented methodology, findings, testing evidence and remediation recommendations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2026 Amal | Designed with ❤️
-  </footer>
+    <section id="experience" class="section container">
+      <p class="eyebrow">EXPERIENCE</p><h2>Cybersecurity Internship</h2>
+      <div class="timeline">
+        <article class="card">
+          <h3>Cybersecurity Intern</h3>
+          <p>Gained practical exposure to basic penetration testing, vulnerability analysis and network security concepts. Worked with security and network analysis tools including Metasploit and TCPDump while developing an understanding of ethical security testing workflows.</p>
+        </article>
+      </div>
+    </section>
 
-  <script>
-    function welcome() {
-      alert("Welcome to my website! Thanks for visiting 😊");
-    }
-  </script>
+    <section id="education" class="section alt">
+      <div class="container">
+        <p class="eyebrow">EDUCATION</p><h2>Bachelor of Computer Applications (BCA)</h2>
+        <div class="card"><h3>Yenepoya University</h3><p>Academic focus and specialization exposure in Cybersecurity, Cloud Computing and Ethical Hacking.</p></div>
+      </div>
+    </section>
 
+    <section id="contact" class="section container contact">
+      <p class="eyebrow">CONTACT</p><h2>Let's connect</h2>
+      <p>I am open to entry-level opportunities and internships where I can apply my skills, learn from experienced teams and contribute to meaningful technical work.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:amalpp2006as@gmail.com">Email Me</a>
+        <a class="btn" href="https://www.linkedin.com/in/amal-p-p-047a5441a" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container">© <span id="year"></span> Amal P P · Built for GitHub Pages</div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
